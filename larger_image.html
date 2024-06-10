@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="layout.css" />
+    <link rel="icon" href="immages/icon.png" type="immages/icon">
+    <title>Larger_Image</title>
+        <body>
+          <header>
+            <div class="cover-container">
+            <nav class="nav-menu" id="navbar">
+                <ul>
+            <li class="logo"><a href="index.html"><img src="immages/Logo2.png" alt="logo"></a></li>
+              <li><a href="Portfolio.html">Portfolio</a></li>
+              <li><a href="Customise.html">Customise</a></li>
+              <li><a href="Connect.html">Connect</a></li>
+              <div class="social-media">
+                <a href="https://www.instagram.com/faber_art_/" target="_blank">
+                  <img src="immages/instagram2.png" alt="Instagram">
+                </a>
+              </div>
+       </ul>
+          </nav>
+        </header>
+    <style>
+
+      img {
+        max-width: 100%;
+        max-height: 100%;
+        border-radius: 10px;
+      }
+      body {
+        background-color: #ffffff;
+      }
+    </style>
+  </head>
+  <div class="image-container">
+    <img id="larger-image" src="immages/Rectangle 82.png" />
+
+    <div class="information-form">
+        <h2>Information</h2>
+        <p><strong>Material:</strong> <span id="material">18 ct gold chain (carat) and 22 ct. sphere with 0.2 ct. diamond..</span></p>
+        <p><strong>Size:</strong> <span id="size">Chain 45 cm long. Sphere diameter 1 cm.</span></p>
+        <p><strong>Description:</strong> <span id="description">The chain consists of small rings, which are then formed and twisted into 
+          single knits, to then be beaten into a quadrangular section, which is intended to result uniform and soft.  <br />  <br />The sphere is made from 
+          two soldered hemispheres, made in sheet form and then hammered with punches. With bezel for the brilliant and ring for the chain.</span></p>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <a href="return_policy.html">Return Policy</a>
+        <p>&copy; 2024 FabArt. All rights reserved.</p>
+    </div>
+</footer>
+
+
+    <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      const imageSrc = urlParams.get("src");
+      const largerImage = document.getElementById("immages/Rectangle 82.png");
+      largerImage.src = imageSrc;
+    </script>
+  </body>
+</html>
+
+

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="layout.css" />
+    <link rel="icon" href="immages/icon.png" type="immages/icon">
+    <title>Check_out</title>
+    <header>
+        <body>
+            <div class="cover-container">
+                <nav class="nav-menu" id="navbar">
+                    <ul>
+            <li class="logo"><a href="index.html"><img src="immages/Logo2.png" alt="logo"></a></li>
+          <li><a href="Portfolio.html">Portfolio</a></li>
+          <li><a href="Customise.html">Customise</a></li>
+          <li><a href="Connect.html">Connect</a></li>
+          <div class="social-media">
+            <a href="https://www.instagram.com/faber_art_/" target="_blank">
+              <img src="immages/instagram2.png" alt="Instagram">
+            </a>
+          </div>
+                    </ul>
+        </nav>
+      </nav>
+    </header>
+    <h1>Selected Options</h1>
+    <div class="checkout-container">
+        <div id="selected-options"></div>
+        <p>Good choice, your order is almost ready! Please enter your Full Name before proceeding to the checkout. <br> 
+        I will receive an e-mail with your order and then i will be able to create and send you a photo of how the jewel will turn out. 
+        <br>If you will be satisfied, you can proceed with the payment, otherwise you can try other combinations.</p>
+           
+            <div class="form-group">
+                <label for="cardholder-name">Your full Name</label>
+                <input type="text" id="cardholder-name" name="cardholder-name" required>
+            </div>
+
+            <div class="submit-button-container">
+                <button id="submit-button" onclick="submitForm()">Send</button>
+              </div>
+        
+        <!-- Payment form -->
+        <div class="payment-form">
+            <h2>Payment Information</h2>
+            <form>
+                <!-- Cardholder's Name -->
+                <div class="form-group">
+                    <label for="cardholder-name">Cardholder's Name</label>
+                    <input type="text" id="cardholder-name" name="cardholder-name" required>
+                </div>
+                <!-- Card Number -->
+                <div class="form-group">
+                    <label for="card-number">Card Number</label>
+                    <input type="text" id="card-number" name="card-number" required>
+                </div>
+                <!-- Expiry Date -->
+                <div class="form-group">
+                    <label for="expiry-date">Expiry Date</label>
+                    <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY" required>
+                </div>
+                <!-- CVC -->
+                <div class="form-group">
+                    <label for="cvc">CVC</label>
+                    <input type="text" id="cvc" name="cvc" required>
+                </div>
+                <!-- Address -->
+                <div class="form-group">
+                    <label for="address">Address</label>
+                    <input type="text" id="address" name="address" required>
+                </div>
+                <!-- Country -->
+                <div class="form-group">
+                    <label for="country">Country</label>
+                    <input type="text" id="country" name="country" required>
+                </div>
+            </form>
+        </div>
+        <button type="submit">Submit Payment</button>
+            </form>
+        </div>
+
+        <script src="checkout.js"></script>
+
+
+    <footer class="footer">
+        <div class="footer-content">
+            <a href="return_policy.html">Return Policy</a>
+          <p>&copy; 2024 FabArt. All rights reserved.</p>
+        </div>
+      </footer>
+</body>
+</html>
